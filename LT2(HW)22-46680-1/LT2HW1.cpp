@@ -1,4 +1,4 @@
-#include<bitd/stdc++.h>
+#include<bits/stdc++.h>
 uing namespace std;
 int main(){
 int array[10] = {1,2,3,5,6,3,2,3,1,10};
