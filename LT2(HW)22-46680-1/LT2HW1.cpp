@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-uing namespace std;
+using namespace std;
 int main(){
 int array[10] = {1,2,3,5,6,3,2,3,1,10};
 int n,counter=0;
