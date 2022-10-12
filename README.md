@@ -1,5 +1,5 @@
 # Data Structure Lab
-![Profile views](https://gpvc.arturio.dev/Raihanulislam12s)
+![views](https://gpvc.arturio.dev/DataStructureLab)
 
 | Lab Number | Date | Code |
 | -- | -------- | ----------- |
