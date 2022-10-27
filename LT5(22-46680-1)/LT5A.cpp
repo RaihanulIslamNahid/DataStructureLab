@@ -1,56 +1,81 @@
 #include<iostream>
-#include<stack>
 using namespace std;
-#define n 100
-class Stack{
-    int* arr[n];
-    int top;
-public:
-   stack(){
-        arr=new int[n];
-        top=-1;
-    }
-    void push(int x){
-        if(top==n-1){
-            cout<<"Stack overflow"<<endl;
-            return;
-        }
-        top++;
-        arr[top]=x;
-    }
-    void pop(){
-        if(top==-1){
-            cout<<"No Element to pop"<<endl;
-            return;
-        }
-        top--;
-    }
-    int Top(){
-        if(top==-1){
-            cout<<"No Element to Stack"<<endl;
-            return -1;
-        }
-        return arr[top];
-    }
-    bool empty(){
-        return top==-1;
-    }
 
-};
+int stack[10];
+int top = -1;
+
+bool isEmpty()
+{
+    if(top == -1)
+        return true;
+    else
+        return false;
+}
+
+bool isFull()
+{
+    if(top == 9)
+        return true;
+    else
+        return false;
+}
+
+void push(int value)
+{
+    if(isFull())
+        cout<<"Stack Overflow"<<endl;
+    else{
+        top++;
+        stack[top] = value;
+        cout<<"Value Pushed"<<endl;
+    }
+}
+
+void pop()
+{
+    if(isEmpty())
+        cout<<"Stack underflow"<<endl;
+    else{
+        top--;
+        cout<<"Value Poped"<<endl;
+    }
+}
+
+void display()
+{
+    if(isEmpty())
+        cout<<"Stack is Empty"<<endl;
+    else{
+        cout<<"Stack : ";
+        for(int i = top; i >= 0; i--){
+            cout<<stack[i]<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+void showTop()
+{
+    if(isEmpty())
+        cout<<"Stack is Empty"<<endl;
+    else
+        cout<<"Top Element : "<<stack[top];
+}
 int main()
 {
-    Stack st;
-    st.push(1);
-    st.push(2);
-    st.push(3);
-    st.push(4);
-    cout<<st.Top()<<endl;
-    st.pop();
-    cout<<st.Top()<<endl;
-    st.pop();
-    st.pop();
-    st.pop();
-    cout<<st.empty()<<endl;
+    push(1);
+    push(2);
+    push(3);
+    push(4);
+    push(5);
+    push(6);
+    push(7);
+    display();
+    showTop();
+    cout<<endl;
+    pop();
+    pop();
+    display();
+    showTop();
+};
 
-    return 0;
-}
