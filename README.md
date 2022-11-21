@@ -10,7 +10,7 @@
 | Lab-4 |20-10-2022  | [c++](https://github.com/Raihanulislam12s/DataStructureLab/tree/main/LT4(22-46680-1)) | 
 | Lab-5 |27-10-2022| [c++](https://github.com/Raihanulislam12s/DataStructureLab/tree/main/LT5(22-46680-1)) | 
 | FLT-1 |14-11-2022  | [c++](https://github.com/Raihanulislam12s/DataStructureLab/tree/main/FLT1(22-46680-1)) |
-| FLT-2 |21-11-2022 | [c++]() |
+| FLT-2 |21-11-2022 | [c++](https://github.com/Raihanulislam12s/DataStructureLab/tree/main/FLT2(22-46680-1)) |
 | Lab-8 |  | [c++]() |
 | Lab-9 |  | [c++]() |
 | Lab-10 |  | [c++]() |
